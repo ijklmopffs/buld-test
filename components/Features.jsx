@@ -8,10 +8,10 @@ export default function Features() {
   return (
     <section className="flex justify-between max-w-[1280px] mx-auto p-8">
       <div>
-        <h2 className="font-bold text-3xl md:text-5xl text-[#060C3C] w-96 md:w-[35rem] mx-auto md:mx-0 text-center md:text-start">
+        <h2 className="font-bold text-3xl md:text-5xl text-[#060C3C] w-auto md:w-[35rem] mx-auto md:mx-0 text-center md:text-start">
           We provide features for your product
         </h2>
-        <div className="md:hidden">
+        <div className="md:hidden mx-auto">
           <img src={featuresImgMobile} alt="" />
         </div>
 

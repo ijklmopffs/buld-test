@@ -12,7 +12,7 @@ export default function Benefits() {
         <img src={benefitsImg} alt="" />
       </div>
       <div>
-        <h2 className="font-bold text-3xl md:text-5xl text-[#060C3C] w-96 mx-auto md:mx-0 md:w-[40rem] my-5 text-center md:text-start">
+        <h2 className="font-bold text-3xl md:text-5xl text-[#060C3C] w-auto mx-auto md:mx-0 md:w-[40rem] my-5 text-center md:text-start">
           The reasons to prefer choosing our platform
         </h2>
         <p className="text-lg text-[#5D6180] text-center md:text-start w-80 md:w-96 mx-auto md:mx-0">

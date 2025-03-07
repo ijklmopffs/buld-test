@@ -54,7 +54,7 @@ export default function Hero() {
           <img
             src={heroImgMobile}
             alt="hero illustration"
-            className="md:hidden"
+            className="md:hidden mx-auto"
           />
         </div>
       </section>
