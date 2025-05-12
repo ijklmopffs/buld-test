@@ -1,68 +1,66 @@
-import netflix from "../src/assets/Netflix.svg";
-import microsoft from "../src/assets/Microsoft.svg";
-import shopify from "../src/assets/Shopify.svg";
-import tryImg from "../src/assets/try.svg";
-import cynthia from "../src/assets/cyhntya.svg";
-import derry from "../src/assets/derry.svg";
+import charityImg from "../src/assets/charity.png";
+import merchandiseImg from "../src/assets/merchandise.png";
 
 export default function Review() {
   return (
-    <section className="my-20 space-y-6 max-w-[1280px] mx-auto p-8">
-      <h2 className="font-bold text-3xl md:text-5xl text-[#060C3C] w-96 md:w-[40rem] mx-auto text-center my-5">
-        See what our customers have to say about us
-      </h2>
-
-      <div className="flex flex-col md:flex-row justify-between mt-10 gap-4 md:gap-0">
-        <div className="bg-[#F4F1FF] rounded-md p-8 w-fit space-y-4 mx-auto md:mx-0">
-          <img src={netflix} alt="" />
-          <p className="italic text-[#5D6180] w-72 text-sm md:text-base">
-            “I’ve used Growthly at many companies before—it’s the go-to solution
-            when you need user and product analytics.”
-          </p>
-          <div className="flex items-center gap-2">
-            <img src={tryImg} alt="" />
-            <div>
-              <h4 className="font-bold text-[#060C3C] text-lg">
-                Try Washington
-              </h4>
-              <p className="text-[#6241D4]">CEO of Netflix</p>
-            </div>
+    <>
+      <section className="my-20 space-y-6 max-w-[1280px] mx-auto flex gap-20 justify-between p-4">
+        <h3 className="font-semibold text-4xl text-[#2C322A]">FAQ</h3>
+        <div className="space-y-6">
+          <div className="bg-[#1F892B] p-6 rounded-md w-[70rem]">
+            <h4 className="font-medium text-2xl text-white">
+              What is EduAid-Africa?
+            </h4>
+          </div>
+          <div className="bg-[#F9F9F8] p-6 rounded-md w-[70rem]">
+            <h4 className="font-medium text-2xl text-[#1F892B]">
+              How do I get involved?
+            </h4>
+          </div>
+          <div className="bg-[#F9F9F8] p-6 rounded-md w-[70rem]">
+            <h4 className="font-medium text-2xl text-[#1F892B]">
+              What is the GetFinance Africa Wallet?
+            </h4>
           </div>
         </div>
+      </section>
+      <section className="my-20 space-y-6 max-w-[1280px] mx-auto">
+        <h3 className="font-semibold text-4xl text-[#2C322A] text-center">
+          Ready to Take Action
+        </h3>
+        <p className="text-[#40493E] mt-3 text-center text-lg">
+          Take action today and change lives
+        </p>
 
-        <div className="bg-[#F4F1FF] rounded-md p-8 w-fit space-y-4 mx-auto md:mx-0">
-          <img src={microsoft} alt="" />
-          <p className="italic text-[#5D6180] w-72 text-sm md:text-base">
-            “Uses Growthly as the source of truth for all its product data, and
-            to determine where the team should focus its time.”
-          </p>
-          <div className="flex items-center gap-2">
-            <img src={cynthia} alt="" />
-            <div>
-              <h4 className="font-bold text-[#060C3C] text-lg">
-                Cyhntya Rebecca
-              </h4>
-              <p className="text-[#6241D4]">CEO of Microsoft</p>
-            </div>
+        <div className="bg-[#F5FBF4] rounded-md flex items-center justify-between p-10">
+          <div className="space-y-6">
+            <h3 className="font-semibold text-4xl text-[#1F892B]">
+              Make A Donation
+            </h3>
+            <p className="text-[#1F892B] mt-3 text-lg">
+              Invest in People , Invest in their growth <br /> Invest in a
+              stronger educational Standard
+            </p>
+            <button className="rounded-full bg-[#1F892B] text-white px-6 py-4 font-semibold text-sm">
+              Donate now
+            </button>
           </div>
+          <img src={charityImg} alt="" />
         </div>
+      </section>
 
-        <div className="bg-[#F4F1FF] rounded-md p-8 w-fit space-y-4 mx-auto md:mx-0">
-          <img src={shopify} alt="" />
-          <p className="italic text-[#5D6180] w-72 text-sm md:text-base">
-            “Uses Growthly to get deeper user insights that could be easily
-            shared among teams throughout the world, improving the company
-            investment.”
-          </p>
-          <div className="flex items-center gap-2">
-            <img src={derry} alt="" />
-            <div>
-              <h4 className="font-bold text-[#060C3C] text-lg">Derry Alasca</h4>
-              <p className="text-[#6241D4]">CEO of Shopify</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      <section className="my-20 space-y-6 max-w-[1280px] mx-auto">
+        <h3 className="font-semibold text-4xl text-[#2C322A] text-center">
+          Get Our Merchandise
+        </h3>
+        <p className="text-[#40493E] mt-3 text-center text-lg">
+          Donate by getting our merchandise
+        </p>
+        <img src={merchandiseImg} alt="" />
+        <button className="rounded-full bg-[#1F892B] text-white px-6 py-4 font-semibold text-sm mt-20 flex items-center mx-auto">
+          Donate with merchandise
+        </button>
+      </section>
+    </>
   );
 }

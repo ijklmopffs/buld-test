@@ -1,57 +1,49 @@
-import featuresImg from "../src/assets/features.svg";
-import featuresImgMobile from "../src/assets/featuresMobile.svg";
-import integratedImg from "../src/assets/Integrated.svg";
-import syncImg from "../src/assets/Sync.svg";
-import reportImg from "../src/assets/Report.svg";
+import testImg from "../src/assets/test.png";
+import mapImg from "../src/assets/Map.png";
+import engagementImg from "../src/assets/engagement.png";
+import chapterImg from "../src/assets/chapter.png";
 
 export default function Features() {
   return (
-    <section className="flex justify-between max-w-[1280px] mx-auto p-8">
-      <div>
-        <h2 className="font-bold text-3xl md:text-5xl text-[#060C3C] w-auto md:w-[35rem] mx-auto md:mx-0 text-center md:text-start">
-          We provide features for your product
-        </h2>
-        <div className="md:hidden mx-auto">
-          <img src={featuresImgMobile} alt="" />
-        </div>
+    <>
+      <main
+        className="bg-[#0B2005] bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${mapImg})` }}
+      >
+        <section className="max-w-[1280px] mx-auto p-40">
+          <h3 className="font-semibold text-4xl text-white text-center">
+            EduAid Africa 2032 SMART Goals
+          </h3>
+          <p className="text-lg text-white mt-3 text-center">
+            EduAid Africa, an initiative of the Santos Creations Educational
+            Foundation (SCEF), is dedicated to achieving impactful and
+            sustainable educational transformation across Africa by 2032. The
+            SMART Goals outlined below provide a clear roadmap for driving
+            innovation, inclusivity, and accessibility in education through
+            scholarships, capacity-building programs, infrastructure support,
+            and digital learning.
+          </p>
+          <img src={testImg} alt="" className="mt-20" />
+        </section>
+      </main>
 
-        <div>
-          <div className="my-10 border-2 border-white bg-white rounded-md shadow-2xl p-6 flex gap-4">
-            <div>
-              <img src={integratedImg} alt="" />
-            </div>
-            <div>
-              <h3 className="font-bold text-lg md:text-2xl text-[#060C3C]">
-                Integrated with Social Media
-              </h3>
-              <p className="text-[#5D6180] w-64 md:w-96 text-sm md:text-base">
-                Seamless integration of more than 20+ apps that can help
-                analytics
-              </p>
-              <a href="/" className="font-bold text-[#6241D4] underline">
-                Learn More
-              </a>
-            </div>
-          </div>
+      <section className="max-w-[1280px] mx-auto mt-40">
+        <h3 className="font-semibold text-4xl text-[#2C322A] text-center">
+          Engagement and Collaboration
+        </h3>
+        <p className="text-[#40493E] mt-3 text-center text-lg">
+          Get involved, become a member today by joining as an Ambassador,
+          Donor, Partner or Volunteer{" "}
+        </p>
+        <img src={engagementImg} alt="" className="mt-10" />
+      </section>
 
-          <div className="flex items-center gap-4 my-10">
-            <img src={syncImg} alt="" />
-            <p className="text-[#B4B6C4] font-bold text-lg md:text-2xl">
-              Always in syncronized
-            </p>
-          </div>
-
-          <div className="flex items-center gap-4 my-10">
-            <img src={reportImg} alt="" />
-            <p className="text-[#B4B6C4] font-bold text-lg md:text-2xl">
-              Powerful report
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="hidden md:block">
-        <img src={featuresImg} alt="" />
-      </div>
-    </section>
+      <section className="max-w-[1280px] mx-auto mt-40 p-4">
+        <h3 className="font-semibold text-4xl text-[#2C322A] text-center">
+          Create or Join a Local Chapter
+        </h3>
+        <img src={chapterImg} alt="" className="mt-20" />
+      </section>
+    </>
   );
 }
